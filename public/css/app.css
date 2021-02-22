@@ -10994,6 +10994,7 @@ a.tags:not(:last-child) {
 #user-edit .image_container {
   height: 18rem;
   width: 18rem;
+  overflow: hidden;
 }
 
 #user-index .image_container img,
@@ -11010,13 +11011,18 @@ a.tags:not(:last-child) {
 }
 
 #user-show .image_container,
-#post-show .image_container {
+#post-show .image_container,
+#post-edit .image_container,
+#user-edit .image_container {
   height: 600px;
   width: 600px;
+  overflow: hidden;
 }
 
 #user-show .image_container img,
-#post-show .image_container img {
+#post-show .image_container img,
+#post-edit .image_container img,
+#user-edit .image_container img {
   min-height: 100%;
   min-width: 100%;
   overflow: hidden;
@@ -11026,8 +11032,7 @@ a.tags:not(:last-child) {
      object-position: center;
 }
 
-#post-edit .image_container,
 #user-edit .image_container {
-  margin: 20px;
+  margin-bottom: 10px;
 }
 

@@ -83,7 +83,6 @@ class UserController extends Controller
       $data = $request->all();
 
       $user->update($data);
-      dd($data);
 
       if(isset($data['image_url'])){
         $user->image_url = $data['image_url']->store('images');

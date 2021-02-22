@@ -42,6 +42,7 @@ a.tags:not(:last-child){
   .image_container{
     height: 18rem;
     width: 18rem;
+    overflow: hidden;
 
     img{
       min-height: 100%;
@@ -50,14 +51,14 @@ a.tags:not(:last-child){
       object-fit: cover;
       object-position: center;
     }
-
   }
 }
 
-#user-show, #post-show{
+#user-show, #post-show, #post-edit, #user-edit{
   .image_container{
     height: 600px;
     width: 600px;
+    overflow: hidden;
 
     img{
       min-height: 100%;
@@ -69,8 +70,8 @@ a.tags:not(:last-child){
   }
 }
 
-#post-edit, #user-edit{
+#user-edit{
   .image_container{
-    margin: 20px;
+    margin-bottom: 10px;
   }
 }
